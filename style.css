@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-/* HERO SECTION / BANNER FOTO TKK */
+/* HERO SECTION */
 .hero-section {
     background: linear-gradient(135deg, #1b365d, #008080);
     color: white;
@@ -130,7 +130,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* GRID KALENDER AKADEMIK (GAYA RUANGGURU) */
+/* GRID KALENDER AKADEMIK */
 .academic-calendar-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -154,19 +154,6 @@ body {
     font-size: 1rem;
     letter-spacing: 0.8px;
 }
-
-.month-header.oct { background: #1b365d; }
-.month-header.nov { background: #008080; }
-.month-header.dec { background: #d97706; }
-.month-header.jan { background: #0284c7; }
-.month-header.feb { background: #4f46e5; }
-.month-header.mar { background: #059669; }
-.month-header.apr { background: #0891b2; }
-.month-header.mei { background: #7c3aed; }
-.month-header.jun { background: #db2777; }
-.month-header.jul { background: #2563eb; }
-.month-header.agu { background: #ea580c; }
-.month-header.sep { background: #9333ea; }
 
 .calendar-table {
     display: grid;
@@ -195,14 +182,13 @@ body {
 
 .num.sun { color: #dc2626; }
 
-/* Highlight Warna Tanggal */
-.highlight-blue { background-color: #dbeafe; color: #1e40af; font-weight: 700; }
-.highlight-teal { background-color: #ccfbf1; color: #0f766e; font-weight: 700; }
-.highlight-orange { background-color: #fef3c7; color: #b45309; font-weight: 700; }
-.highlight-pink { background-color: #fce7f3; color: #be185d; font-weight: 700; }
-.highlight-green { background-color: #dcfce7; color: #15803d; font-weight: 700; }
-.highlight-purple { background-color: #f3e8ff; color: #6b21a8; font-weight: 700; }
-.highlight-red { background-color: #fee2e2; color: #b91c1c; font-weight: 700; }
+/* Dynamic Highlight Warna Tanggal */
+.highlight-date {
+    background-color: #fef08a !important;
+    color: #854d0e !important;
+    font-weight: 700;
+    border: 1px solid #eab308;
+}
 
 .month-details {
     padding: 0.9rem;
@@ -234,15 +220,8 @@ body {
     display: inline-block;
     margin-top: 5px;
     flex-shrink: 0;
+    background: #008080;
 }
-
-.dot.blue { background: #1e40af; }
-.dot.teal { background: #0f766e; }
-.dot.orange { background: #b45309; }
-.dot.pink { background: #be185d; }
-.dot.green { background: #15803d; }
-.dot.purple { background: #6b21a8; }
-.dot.red { background: #b91c1c; }
 
 /* PANEL INTERAKTIF */
 .interactive-panel {

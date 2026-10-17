@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-/* HERO SECTION */
+/* HERO SECTION / BANNER FOTO TKK */
 .hero-section {
     background: linear-gradient(135deg, #1b365d, #008080);
     color: white;
@@ -153,6 +153,7 @@ body {
     color: white;
     font-size: 1rem;
     letter-spacing: 0.8px;
+    background: var(--primary-navy);
 }
 
 .calendar-table {
@@ -182,12 +183,13 @@ body {
 
 .num.sun { color: #dc2626; }
 
-/* Dynamic Highlight Warna Tanggal */
-.highlight-date {
-    background-color: #fef08a !important;
-    color: #854d0e !important;
+/* Sorotan Warna Real-time untuk Tanggal Beragenda */
+.highlight-active {
+    background-color: #008080 !important;
+    color: #ffffff !important;
     font-weight: 700;
-    border: 1px solid #eab308;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 128, 128, 0.4);
 }
 
 .month-details {
@@ -220,7 +222,7 @@ body {
     display: inline-block;
     margin-top: 5px;
     flex-shrink: 0;
-    background: #008080;
+    background: var(--accent-teal);
 }
 
 /* PANEL INTERAKTIF */

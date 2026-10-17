@@ -3,109 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul & Catatan Proker - TKK FSIP UMY</title>
+    <title>Kalender Akademik & Agenda TKK FSIP UMY</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="hero-section" style="padding: 2.5rem 1.5rem;">
-        <div class="hero-container" style="justify-content: center; text-align: center;">
+    <!-- HERO SECTION / FOTO KELUARGA TKK -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="photo-card">
+                <img src="https://i.ibb.co.com/r2ZN0vD9/Whats-App-Image-2026-10-18-at-00-26-19.jpg" alt="Keluarga Besar TKK FSIP UMY" id="family-photo">
+            </div>
             <div class="hero-text">
-                <span class="badge">Pusat Informasi & Catatan Bidang</span>
-                <h1 style="font-size: 2rem; margin-top: 0.5rem;">📚 Modul & Catatan Seluruh Proker TKK</h1>
-                <p class="quote" style="border: none; padding: 0; margin-bottom: 1rem;">"Tempat penyimpanan konsep, silabus, dan catatan koordinasi program kerja."</p>
-                <a href="index.html" class="btn-primary">⬅ Kembali ke Kalender Utama</a>
+                <span class="badge">Bidang TKK PK IMM FSIP UMY 2026/2027</span>
+                <h1>Keluarga Besar TKK</h1>
+                <p class="quote">"Sekali layar terkambang, pantang surut berpulang."</p>
+                <a href="belajar.html" class="btn-primary">📚 Catatan Proker-Proker</a>
             </div>
         </div>
     </header>
 
+    <!-- KONTEN UTAMA: KALENDER AKADEMIK & AGENDA -->
     <main class="main-container">
         
-        <!-- DAFTAR PROKER & RUANG CATATAN -->
-        <div class="academic-calendar-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
-            
-            <!-- 1. TKK Mengajar -->
-            <div class="month-card" style="padding: 1.2rem;">
-                <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">📖 TKK Mengajar</h3>
-                <p style="font-size: 0.85rem; color: #555; margin-bottom: 0.8rem;"><strong>PJ:</strong> Qisti | <strong>Waktu:</strong> Pekan ke-3</p>
-                <p style="font-size: 0.85rem; background: #f8fafc; padding: 8px; border-radius: 6px;">Konsep: <em>Fun learning</em>, dongeng Islami, dan praktik ibadah interaktif di 4 masjid target (Siratal Mustaqim, Al-Huda, Husnul Khatimah, An-Nur).</p>
-            </div>
-
-            <!-- 2. Kajian Senja Kampus -->
-            <div class="month-card" style="padding: 1.2rem;">
-                <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">🌅 Kajian Senja Kampus</h3>
-                <p style="font-size: 0.85rem; color: #555; margin-bottom: 0.8rem;"><strong>PJ:</strong> Husna & Diena | <strong>Waktu:</strong> Jumat Sore (Pekan ke-1)</p>
-                <p style="font-size: 0.85rem; background: #f8fafc; padding: 8px; border-radius: 6px;">Konsep: Kajian keislaman tematik ringan menjelang sore hari untuk mempererat kebersamaan kader.</p>
-            </div>
-
-            <!-- 3. Islamic Content -->
-            <div class="month-card" style="padding: 1.2rem;">
-                <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">📱 Islamic Content</h3>
-                <p style="font-size: 0.85rem; color: #555; margin-bottom: 0.8rem;"><strong>PJ:</strong> Aviva & Wahab | <strong>Waktu:</strong> Pekan 2 (Video/Reels) & Pekan 4 (Feed)</p>
-                <p style="font-size: 0.85rem; background: #f8fafc; padding: 8px; border-radius: 6px;">Konsep: Branding media sosial Instagram TKK melalui publikasi konten dakwah visual dan video kreatif.</p>
-            </div>
-
-            <!-- 4. Tadarus 30 Juz -->
-            <div class="month-card" style="padding: 1.2rem;">
-                <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">📖 Tadarus Bersama 30 Juz</h3>
-                <p style="font-size: 0.85rem; color: #555; margin-bottom: 0.8rem;"><strong>PJ:</strong> Ana & Isti | <strong>Waktu:</strong> Bulan Ramadan</p>
-                <p style="font-size: 0.85rem; background: #f8fafc; padding: 8px; border-radius: 6px;">Konsep: Kegiatan tilawah Al-Qur'an bersama untuk menghidupkan suasana ruhani selama bulan suci Ramadan.</p>
-            </div>
-
-            <!-- 5. Muhadharah -->
-            <div class="month-card" style="padding: 1.2rem;">
-                <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">🎙️ Muhadharah</h3>
-                <p style="font-size: 0.85rem; color: #555; margin-bottom: 0.8rem;"><strong>PJ:</strong> Roro & Ruli | <strong>Waktu:</strong> Tentatif</p>
-                <p style="font-size: 0.85rem; background: #f8fafc; padding: 8px; border-radius: 6px;">Konsep: Pelatihan retorika dan praktik ceramah kader guna melatih keberanian tampil di muka umum.</p>
-            </div>
-
-            <!-- 6. Public Speaking & Retorika -->
-            <div class="month-card" style="padding: 1.2rem;">
-                <h3 style="color: var(--primary-navy); margin-bottom: 0.5rem;">🗣️ Public Speaking & Retorika</h3>
-                <p style="font-size: 0.85rem; color: #555; margin-bottom: 0.8rem;"><strong>PJ:</strong> Nafisa | <strong>Waktu:</strong> Pra-CM (Tentatif)</p>
-                <p style="font-size: 0.85rem; background: #f8fafc; padding: 8px; border-radius: 6px;">Konsep: Kelas pembekalan dasar teknik berbicara di depan umum dan penguasaan panggung secara online/offline.</p>
-            </div>
-
+        <div class="section-title">
+            <h2>📅 Kalender Agenda TKK FSIP UMY (2026/2027)</h2>
+            <p>Sistem Kalender Terpadu 1 Periode (Oktober 2026 - September 2027)</p>
         </div>
 
-        <!-- FORM TAMBAH CATATAN / MODUL BARU -->
-        <section class="interactive-panel" style="margin-top: 2rem;">
-            <div class="form-box" style="max-width: 100%;">
-                <h3>📝 Tambah / Catat Catatan Proker Baru</h3>
-                <p>Gunakan form ini jika ingin menambahkan catatan atau instruksi khusus untuk proker lainnya!</p>
-                <form id="note-form">
+        <!-- GRID KALENDER AKADEMIK (OKTOBER 2026 - SEPTEMBER 2027) -->
+        <div class="academic-calendar-grid" id="calendar-grid-container">
+            <!-- Grid Bulan & Tanggal Berwarna dirender otomatis via JavaScript -->
+        </div>
+
+        <!-- FORM TAMBAH/UBAH AGENDA INTERAKTIF -->
+        <section class="interactive-panel">
+            <div class="form-box">
+                <h3>➕ Kustomisasi & Tambah Agenda Baru</h3>
+                <p>Setiap agenda yang ditambahkan akan otomatis memberikan tanda warna pada kalender dan memunculkan rincian keterangannya di bawah bulan terkait secara real-time!</p>
+                <form id="agenda-form">
                     <div class="form-group">
-                        <label>Nama Proker / Kegiatan:</label>
-                        <input type="text" id="note-title" placeholder="Contoh: Koordinasi Eksternal TPA" required>
+                        <label>Tanggal Agenda:</label>
+                        <input type="date" id="agenda-date" required>
                     </div>
                     <div class="form-group">
-                        <label>Isi Catatan / Konsep:</label>
-                        <input type="text" id="note-desc" placeholder="Tulis catatan penting di sini..." required>
+                        <label>Nama Agenda / Proker:</label>
+                        <input type="text" id="agenda-title" placeholder="Misal: Sounding ph bph" required>
                     </div>
-                    <button type="submit" class="btn-submit">Simpan Catatan</button>
+                    <div class="form-group">
+                        <label>PJ Kegiatan (Opsional - Boleh Dikosongkan):</label>
+                        <input type="text" id="agenda-pj" placeholder="Misal: Qisti, Ruli (Boleh dikosongkan)">
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori:</label>
+                        <select id="agenda-type">
+                            <option value="TKK Mengajar">TKK Mengajar</option>
+                            <option value="Kajian Senja Kampus">Kajian Senja Kampus</option>
+                            <option value="Islamic Content (Video/Reels)">Islamic Content (Video/Reels)</option>
+                            <option value="Islamic Content (Feed)">Islamic Content (Feed)</option>
+                            <option value="Sowan / Observasi TPA">Sowan / Observasi TPA</option>
+                            <option value="Agenda Komsat">Agenda Komsat</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Simpan ke Daftar Agenda</button>
                 </form>
             </div>
-        </section>
 
-        <!-- TABEL CATATAN TAMBAHAN -->
-        <div class="table-box" style="margin-top: 2rem;">
-            <h3>📋 Catatan Tambahan Proker</h3>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nama Proker</th>
-                            <th>Catatan / Konsep</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody id="note-list">
-                        <!-- Data catatan dinamis -->
-                    </tbody>
-                </table>
+            <div class="table-box">
+                <h3>📋 Catatan Agenda Disesuaikan</h3>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Agenda</th>
+                                <th>PJ</th>
+                                <th>Kategori</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agenda-list">
+                            <!-- Data tersimpan dinamis dari JS -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        </section>
 
     </main>
 
@@ -113,50 +99,6 @@
         <p>&copy; 2026 Bidang TKK PK IMM FSIP UMY • Anggun dalam Moral, Unggul dalam Intelektual</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const noteForm = document.getElementById('note-form');
-            const noteList = document.getElementById('note-list');
-
-            let notes = JSON.parse(localStorage.getItem('tkk_notes')) || [];
-
-            function renderNotes() {
-                noteList.innerHTML = '';
-                if(notes.length === 0) {
-                    noteList.innerHTML = `<tr><td colspan="3" style="text-align:center;">Belum ada catatan tambahan.</td></tr>`;
-                    return;
-                }
-                notes.forEach((n, idx) => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
-                        <td><strong>${n.title}</strong></td>
-                        <td>${n.desc}</td>
-                        <td><button class="btn-del" onclick="deleteNote(${idx})">Hapus</button></td>
-                    `;
-                    noteList.appendChild(tr);
-                });
-                localStorage.setItem('tkk_notes', JSON.stringify(notes));
-            }
-
-            noteForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                notes.push({
-                    title: document.getElementById('note-title').value,
-                    desc: document.getElementById('note-desc').value
-                });
-                renderNotes();
-                noteForm.reset();
-            });
-
-            window.deleteNote = function(idx) {
-                if(confirm('Hapus catatan ini?')) {
-                    notes.splice(idx, 1);
-                    renderNotes();
-                }
-            }
-
-            renderNotes();
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

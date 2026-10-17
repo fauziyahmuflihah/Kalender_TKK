@@ -3,78 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul & Silabus - TKK FSIP UMY</title>
+    <title>Kalender Akademik & Agenda TKK FSIP UMY</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="hero-section" style="padding: 2.5rem 1.5rem;">
-        <div class="hero-container" style="justify-content: center; text-align: center;">
+    <!-- HERO SECTION / FOTO KELUARGA TKK -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="photo-card">
+                <img src="https://i.ibb.co.com/r2ZN0vD9/Whats-App-Image-2026-10-18-at-00-26-19.jpg" alt="Keluarga Besar TKK FSIP UMY" id="family-photo">
+            </div>
             <div class="hero-text">
-                <span class="badge">Ruang Belajar & Media TKK</span>
-                <h1 style="font-size: 2rem; margin-top: 0.5rem;">📚 Panduan & Modul TKK Mengajar</h1>
-                <p class="quote" style="border: none; padding: 0; margin-bottom: 1rem;">"Pusat materi fun learning, silabus TPA, dan persiapan pengajar."</p>
-                <a href="index.html" class="btn-primary">⬅ Kembali ke Kalender Utama</a>
+                <span class="badge">Bidang TKK PK IMM FSIP UMY 2026/2027</span>
+                <h1>Keluarga Besar TKK</h1>
+                <p class="quote">"Sekali layar terkambang, pantang surut berpulang."</p>
+                <a href="belajar.html" class="btn-primary">📚 Modul & Catatan Proker</a>
             </div>
         </div>
     </header>
 
+    <!-- KONTEN UTAMA: KALENDER AKADEMIK & AGENDA -->
     <main class="main-container">
         
-        <div class="interactive-panel" style="margin-top: 0;">
-            
+        <div class="section-title">
+            <h2>📅 Kalender Agenda TKK & Komsat FSIP UMY (2026/2027)</h2>
+            <p>Sistem Kalender Terpadu 1 Periode (Oktober 2026 - September 2027)</p>
+        </div>
+
+        <!-- GRID KALENDER AKADEMIK (OKTOBER 2026 - SEPTEMBER 2027) -->
+        <div class="academic-calendar-grid" id="calendar-grid-container">
+            <!-- Grid Bulan dirender otomatis via JavaScript agar sinkron dengan agenda tambahan -->
+        </div>
+
+        <!-- FORM TAMBAH & KELOLA AGENDA INTERAKTIF -->
+        <section class="interactive-panel">
             <div class="form-box">
-                <h3>🎯 Konsep Fun Learning TPA (1x Sebulan)</h3>
-                <p>Panduan pelaksanaan pengajaran di 4 masjid target (Siratal Mustaqim, Al-Huda, Husnul Khatimah, An-Nur):</p>
-                
-                <ul style="margin-left: 1.2rem; font-size: 0.85rem; line-height: 1.8;">
-                    <li><strong>Metode Interaktif:</strong> Dongeng Islami, cerita nabi, dan kuis adab.</li>
-                    <li><strong>Praktek Ibadah:</strong> Bimbingan wudhu, gerakan shalat, dan hafalan doa harian.</li>
-                    <li><strong>Games Edukatif:</strong> Ice breaking interaktif di awal/akhir sesi.</li>
-                    <li><strong>Kolaborasi SDM:</strong> Internal TKK & pengajar kolaborasi komsat.</li>
-                </ul>
+                <h3>➕ Tambah / Kustomisasi Agenda Baru</h3>
+                <p>Setiap agenda yang ditambahkan akan otomatis menandai kalender dan memunculkan rincian keterangannya di bawah bulan terkait!</p>
+                <form id="agenda-form">
+                    <div class="form-group">
+                        <label>Tanggal Agenda:</label>
+                        <input type="date" id="agenda-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Nama Agenda / Proker:</label>
+                        <input type="text" id="agenda-title" placeholder="Misal: Rapat Pleno Komsat" required>
+                    </div>
+                    <div class="form-group">
+                        <label>PJ Kegiatan (Opsional):</label>
+                        <input type="text" id="agenda-pj" placeholder="Bisa dikosongkan jika tidak ada">
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori:</label>
+                        <select id="agenda-type">
+                            <option value="TKK Mengajar">TKK Mengajar</option>
+                            <option value="Kajian Senja">Kajian Senja Kampus</option>
+                            <option value="Islamic Content (Video)">Islamic Content (Video/Reels)</option>
+                            <option value="Islamic Content (Feed)">Islamic Content (Feed)</option>
+                            <option value="Sowan / Observasi">Sowan / Observasi TPA</option>
+                            <option value="Agenda Komsat">Agenda Komsat</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Simpan ke Kalender</button>
+                </form>
             </div>
 
             <div class="table-box">
-                <h3>📑 Checklist Persiapan Pengajar TKK</h3>
-                
+                <h3>📋 Daftar Seluruh Agenda & Kegiatan</h3>
                 <div class="table-responsive">
                     <table>
                         <thead>
                             <tr>
-                                <th>Tahap</th>
-                                <th>Agenda Persiapan</th>
-                                <th>PJ / Pelaksana</th>
+                                <th>Tanggal</th>
+                                <th>Agenda</th>
+                                <th>PJ</th>
+                                <th>Kategori</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Pra-KBM</strong></td>
-                                <td>Cek hasil observasi kebutuhan TPA masjid target</td>
-                                <td>Qisti (PJ TKK Mengajar)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Media</strong></td>
-                                <td>Siapkan visual & alat games/hadiah kuis</td>
-                                <td>Tim Pengajar Masjid</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Pelaksanaan</strong></td>
-                                <td>Eksekusi KBM Fun Learning (Pekan ke-3)</td>
-                                <td>Tim Masjid & Komsat</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Evaluasi</strong></td>
-                                <td>Catatan perkembangan santri & rekap sowan</td>
-                                <td>Seluruh Anggota TKK</td>
-                            </tr>
+                        <tbody id="agenda-list">
+                            <!-- Data tersimpan dinamis dari JS -->
                         </tbody>
                     </table>
                 </div>
             </div>
-
-        </div>
+        </section>
 
     </main>
 
@@ -82,5 +99,6 @@
         <p>&copy; 2026 Bidang TKK PK IMM FSIP UMY • Anggun dalam Moral, Unggul dalam Intelektual</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
